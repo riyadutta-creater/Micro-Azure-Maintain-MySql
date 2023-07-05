@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: maintain
+
+  datasource:
+    url: jdbc:mysql://maintain-azure-mysql.mysql.database.azure.com:3306/maintain?useSSL=true
+    username: admin1
+    password: Pinki@2000
+    
+    #url: jdbc:mysql://mysql-server-skilltracker.mysql.database.azure.com:3306/skilltracker?autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    #username: promitbabai
+    #password: Mamonbabai-1
+  jpa:
+    hibernate:
+       ddl-auto: update
+       use-new-id-generator-mappings: false
+    generate-ddl: true
+    show-sql: true
+
+server:
+ port: 8090
+
+    
